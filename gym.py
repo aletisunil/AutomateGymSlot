@@ -17,7 +17,7 @@ def Booking():
         browser.get("https://reclink.uta.edu/booking/5dcc386e-4bd5-4474-80ec-a47472d3963a")
         sleep(2)
         browser.find_element_by_xpath('//*[@id="divLoginOptions"]/div[2]/div[2]/div/button').click()
-        browser.find_element_by_xpath('//*[@id="i0116"]').send_keys(environ[.get"Email"])
+        browser.find_element_by_xpath('//*[@id="i0116"]').send_keys(environ.get["Email"])
         browser.find_element_by_xpath('//*[@id="idSIButton9"]').click()
         sleep(2)
         browser.find_element_by_xpath('//*[@id="i0118"]').send_keys(environ.get["Password"])
